@@ -25,6 +25,16 @@ At Whirlpool I develop Android-based smart-appliance software—cooking controls
 
 </details>
 
+## Recent builds
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [tagvault](https://github.com/bhavin2/tagvault) | Process historian for plant telemetry: MQTT Sparkplug B ingest, swinging-door compression with a proven error bound (up to **374x** fewer points on tank-level tags), Gorilla-encoded storage and a crash-safe WAL | Rust, MQTT, Sparkplug B |
+| [contextforge](https://github.com/bhavin2/contextforge) | Self-hostable docs answer bot that cites its sources and abstains below a confidence threshold; **0%** hallucination rate on a 30-case eval | TypeScript, Next.js, RAG, pgvector |
+| [driftguard-llm](https://github.com/bhavin2/driftguard-llm) | RAG service with query-embedding drift detection (PSI, KS, centroid) and LLM-as-judge scoring that raise alerts and trigger re-embedding | Python, FastAPI, Prometheus, Grafana |
+| [streamguard-cdc](https://github.com/bhavin2/streamguard-cdc) | Change-data-capture pipeline: Postgres WAL → Debezium → Kafka → Python stream processor (dedupe, schema evolution, windowed aggregation) → ClickHouse | Python, Kafka, Debezium, ClickHouse |
+| [enterprise-employee-portal](https://github.com/bhavin2/enterprise-employee-portal) | HR self-service for leave, timesheets, documents and the org chart, with two-stage approval and a gated Jenkins pipeline with blue-green deploys and automatic rollback | Angular, Node.js, MySQL, Jenkins |
+
 ## Credentials
 
 - **Bachelor of Engineering**, Computer Engineering – Gujarat University
@@ -36,6 +46,11 @@ At Whirlpool I develop Android-based smart-appliance software—cooking controls
 
 ## Projects
 
+- [tagvault](https://github.com/bhavin2/tagvault) — A process historian for plant telemetry in Rust, with MQTT Sparkplug B ingest, bounded-error swinging-door compression and a crash-safe write-ahead log.
+- [contextforge](https://github.com/bhavin2/contextforge) — A self-hostable docs answer bot that cites its sources and abstains when it isn't sure.
+- [driftguard-llm](https://github.com/bhavin2/driftguard-llm) — Catch silent RAG/LLM quality regressions with embedding drift detection and LLM-as-judge scoring.
+- [streamguard-cdc](https://github.com/bhavin2/streamguard-cdc) — Change-data-capture pipeline: Postgres WAL → Debezium → Kafka-compatible broker → Python stream processor → ClickHouse.
+- [enterprise-employee-portal](https://github.com/bhavin2/enterprise-employee-portal) — HR self-service portal with two-stage leave approval and a gated Jenkins CI/CD pipeline.
 - [fwaudit](https://github.com/bhavin2/fwaudit) — Offline firmware image auditor for embedded Linux and IoT that extracts containers in memory under safety limits and reports hardcoded credentials, private…
 - [netcode-arena](https://github.com/bhavin2/netcode-arena) — Server-authoritative multiplayer netcode: a 2-player arena with client-side prediction, server reconciliation, and snapshot interpolation, tested under…
 - [lsmkv](https://github.com/bhavin2/lsmkv) — An LSM-tree key-value storage engine in Rust with a checksummed WAL and group commit, SSTables with bloom filters, leveled compaction, MVCC snapshots and crash…
